@@ -1,0 +1,5 @@
+*.env
+/.vscode
+/node_modules
+./dist
+# because the content in environment variables is different

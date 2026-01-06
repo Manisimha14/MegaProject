@@ -2,15 +2,24 @@
   "name": "megaproject",
   "version": "1.0.0",
   "description": "this is my first project",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
-  
   "author": "Mani Simha",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Manisimha14/MegaProject/issues"
   },
-  "homepage": "https://github.com/Manisimha14/MegaProject#readme"
+  "homepage": "https://github.com/Manisimha14/MegaProject#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.1",
+    "prettier": "^3.7.4"
+  }
 }

@@ -21,4 +21,12 @@ import ConnectDb from './db/connectionoddb.js';
 // }
 
 // ConnectDatabase();
-ConnectDb()
+ConnectDb().then(()=>{
+    app.listen(process.env.PORT || 3000)
+}).catch((error)=>{
+    console.log("MongoDb error");
+    
+
+})
+// as this returns an promise we can use the then and anc catch so we can listen
+// if after succesfull connection

@@ -1,6 +1,7 @@
 import 'dotenv/config';
 
 import ConnectDb from './db/connectionoddb.js';
+import { app } from './app.js';
 
 // // connect db function
 // async function ConnectDatabase(){
@@ -24,7 +25,7 @@ import ConnectDb from './db/connectionoddb.js';
 ConnectDb().then(()=>{
     app.listen(process.env.PORT || 3000)
 }).catch((error)=>{
-    console.log("MongoDb error");
+    console.log("error"+error.message);
     
 
 })

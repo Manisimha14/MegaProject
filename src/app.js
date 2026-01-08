@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import CookieParser from "cookieparser";
+import cookieParser from "cookie-parser";
 
 
 const app= express()
@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}))
 // it is a typee of url encding
 app.use(express.static("public"))
 // for the public files
-app.use(CookieParser())
+app.use(cookieParser())
 export {app}
 // we will import two packages naming cors and cookie parser
 // cookies are nothing but small text files which contains the information about the previous sessions

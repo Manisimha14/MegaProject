@@ -23,11 +23,11 @@ import { app } from './app.js';
 
 // ConnectDatabase();
 ConnectDb().then(()=>{
-    app.listen(process.env.PORT || 3000)
+    app.listen( 8080)
 }).catch((error)=>{
     console.log("error"+error.message);
     
 
 })
-// as this returns an promise we can use the then and anc catch so we can listen
+// as this returns an promise we can use the then and catch so we can listen
 // if after succesfull connection

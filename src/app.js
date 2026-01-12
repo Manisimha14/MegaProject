@@ -19,9 +19,15 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static("public"))
 // for the public files
 app.use(cookieParser())
-export {app}
+
 // we will import two packages naming cors and cookie parser
 // cookies are nothing but small text files which contains the information about the previous sessions
 // we can also configure them
-// 
-
+// ! we will import the rotes after the middle ware
+import userRouter from "./routes/user.routes.js";
+app.use("/users",userRouter)
+// when we type /users we give them the handle to userRouter
+// https:localhost:8000/users/register
+// here after the users is typed it will atomically go the userRouter
+// this is used to not clumsum
+export {app}

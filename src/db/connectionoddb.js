@@ -7,13 +7,13 @@ import mongoose from 'mongoose'
 async function ConnectDb(){
     try {
         const connectionofdatabase= await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`)
-        const port=await connectionofdatabase.connection.host
+        const port= connectionofdatabase.connection.host
         console.log(port);
         console.log("success");
         
         
     } catch (error) {
-        console.log('MongoDbError:${error}')
+        console.log(`MongoDbError: ${error}`)
         process.exit(1);
         
         

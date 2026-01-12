@@ -13,3 +13,4 @@ const asyncHandeler=(requestHandeler)=>async (req,res,next)=>{
 
 
 }
+export {asyncHandeler}

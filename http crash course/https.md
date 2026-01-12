@@ -189,14 +189,7 @@ Status codes tell the **result of a request**.
 
 ---
 
-If you want next:
 
-* 📘 REST API notes (MD file)
-* 🔐 Authentication headers deep-dive
-* 🧪 Postman examples
-* 🖼️ HTTP flowcharts as diagrams
-
-Just tell me 👍
 
 
 
